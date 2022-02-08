@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+
+  .marker {
+    @apply p-1 text-blue-500 hover:text-blue-600 transition-all duration-200 bg-yellow-200 rounded mr-1
+  }
+  .avatar {
+    @apply w-[36px] h-[36px] rounded-full object-cover relative overflow-hidden
+  }
+
+  body {
+    @apply overflow-hidden font-sans
+  }
+
+  .cleanInput {
+    @apply border-0 focus:border-0 focus:ring-0 bg-transparent focus:border-transparent
+  }
+
+  .google_button {
+    @apply p-2 px-4 rounded-md mt-2 active:scale-90 shadow-purple-500 shadow text-white bg-sidebar hover:bg-purple-900 transition-all duration-200 cursor-pointer
+  }
+
+  .message {
+    @apply flex items-start gap-3 p-3 transition-all duration-300 bg-main hover:bg-light cursor-pointer
+  }
+
+  .message_form {
+    @apply p-1 mx-2 bg-transparent flex items-center pr-6 border-border border-2 rounded-xl bg-[#222529] transition-all duration-200 w-[95%]
+  }
+
+  .button_item {
+    @apply px-2 p-1  h-full flex border-l border-white items-center bg-green-800 transition-all duration-200 hover:opacity-75 disabled:opacity-40
+  }
+
+  .tooltip {
+    @apply bg-gray-900 text-white font-medium text-sm rounded-lg absolute opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200  p-2 py-2 whitespace-nowrap
+  }
+
+  .tooltip-top {
+    @apply -top-10 -left-5
+  }
+
+  .emoji {
+    @apply text-2xl flex items-center justify-center  p-2 rounded-lg transition-all cursor-pointer active:scale-90 duration-200 hover:bg-gray-200
+  }
+
+  .tooltip-bottom {
+    @apply -bottom-12 
+  }
+
+  .small_avatar {
+    @apply w-[27px] h-[27px] rounded-md overflow-hidden drop-shadow transition-all duration-200 hover:opacity-80 relative
+  }
+
+  .answear_link {
+    @apply text-xs hover:underline text-blue-600 hover:text-blue-700 transition-all duration-200 cursor-pointer font-semibold
+  }
+  .overlay_ddd {
+    @apply inset-0  hover:opacity-100 hover:visible transition-all duration-200 bg-black bg-opacity-50 flex items-center
+  }
+
+  .round_button {
+    @apply bg-white rounded-full drop-shadow-md transition-all duration-200 hover:bg-gray-100 cursor-pointer active:scale-90 p-2 flex items-center disabled:opacity-50 disabled:cursor-not-allowed
+  }
+
+  .message_toolbar {
+    @apply absolute opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 top-3 right-5
+  }
+
+  .message_img {
+    @apply flex w-[47%] flex-grow h-[50%] relative transition-all duration-200 brightness-75 hover:brightness-90 rounded-md drop-shadow overflow-hidden
+  }
+
+  .sidebar {
+    @apply flex flex-col bg-sidebar  flex-[0.3] fixed md:relative h-full transition-all duration-300 z-50 transform translate-x-[-260px] max-w-[260px] md:translate-x-[0px]
+  }
+
+  .mobile_overlay {
+    @apply  inset-0 bg-black bg-opacity-60 w-screen h-screen absolute transition-all duration-300 z-30 flex md:hidden
+  }
+
+  .appIconBody {
+    @apply p-2 rounded-full active:scale-90 inline-block relative cursor-pointer hover:bg-light transition-all duration-200 text-sidebar
+  }
+
+  .voiceForm {
+    @apply bg-blue-500 flex  items-center rounded-full pr-3 w-full hover:bg-blue-500 text-white p-1 flex-grow
+  }
+
+  .addItem {
+    @apply rounded-2xl duration-200 cursor-pointer hover:bg-light active:scale-95 transition-all flex items-center justify-center border-4 border-sidebar bg-main
+  }
+
+  .boardCard {
+    @apply text-white flex flex-col items-center justify-center overflow-hidden active:scale-95 drop-shadow-lg shadow-sidebar rounded-2xl cursor-pointer hover:opacity-80 transition-all duration-200 bg-darken shadow-xl  h-full
+  }
+
+  .toolitem {
+    @apply p-3 flex justify-center items-center w-[50px] h-[50px] text-textColor hover:text-white bg-sidebar hover:bg-light transition-all duration-200 cursor-pointer active:scale-90
+  }
+
+  
+
+}
+
+
+audio::-webkit-media-controls-panel {
+  background-color: rgb(59, 130, 246) !important;
+  
+}
